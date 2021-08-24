@@ -1,0 +1,31 @@
+
+
+.text-field:focused {
+    -fx-text-box-border:#FFFFFF;
+}
+
+.button
+{
+     -fx-background-color: #6ED9A0;
+    -fx-border-radius: 4px;	
+}
+
+.button:hover{
+-fx-background-color : #00ff77;
+}
+
+.button:pressed
+{
+-fx-background-color : #00ff77;
+}
+
+
+
+.text-field
+{
+	  -fx-prompt-text-fill: #465058;
+	  -fx-text-inner-color:#FBFCFC;
+	  -fx-font-size:15px;
+	  -fx-border-radius: 4px;
+
+}

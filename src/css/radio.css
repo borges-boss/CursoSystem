@@ -1,0 +1,41 @@
+.radio-button .dot{
+    -fx-mark-highlight-color: #2A73FF;
+    -fx-mark-color: #2A73FF;
+    -fx-pref-width:8px;
+    -fx-pref-height:8px;
+    -fx-alignment:CENTER;
+
+
+	
+}
+
+.radio-button .radio{
+    
+    -fx-background-color:transparent;
+    -fx-border-color:gray;
+    -fx-border-width:2px;
+    -fx-border-radius:15px;
+    
+    -fx-pref-width:20px;
+    
+}
+.radio-button .radio:pressed{
+    
+    -fx-background-color:transparent;
+    -fx-border-color:#2A73FF;
+    -fx-border-radius:15px;
+    -fx-border-width:2px;
+    -fx-border-radius:15px;
+    
+    -fx-pref-width:20px;
+}
+.radio-button .label:pressed{
+    
+    -fx-background-color:transparent;
+    -fx-border-color:#2A73FF;
+    -fx-border-radius:15px;
+    -fx-border-width:2px;
+    -fx-border-radius:15px;
+    
+    -fx-pref-width:20px;
+}

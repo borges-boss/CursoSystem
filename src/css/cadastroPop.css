@@ -1,0 +1,49 @@
+#data .text-field {
+    -fx-control-inner-background:transparent;
+    -fx-background-color: transparent;
+    -fx-border-color:  #2A73FF;
+    
+   }
+
+#txtnome{
+    
+    -fx-border-radius:20px;
+    -fx-border-color: #2A73FF;
+    -fx-background-color:transparent;
+    -fx-text-fill:white;
+    
+}
+
+#txtcpf{
+    
+    -fx-border-radius:20px;
+    -fx-border-color: #2A73FF;
+    -fx-background-color:transparent;
+    -fx-text-fill:white;
+    
+}
+
+#txttel{
+    
+    -fx-border-radius:20px;
+    -fx-border-color: #2A73FF;
+    -fx-background-color:transparent;
+    -fx-text-fill:white;
+    
+} 
+#nome{
+    -fx-text-fill:#b7c3d7;
+    -fx-background-color:transparent;
+    -fx-border-color: #2A73FF;
+    -fx-border-radius: 20px;
+    
+    
+}
+
+#dataage .text-input{
+    
+    -fx-control-inner-background:transparent;
+    -fx-background-color: transparent;
+    -fx-border-color:  #2A73FF;
+    
+}
