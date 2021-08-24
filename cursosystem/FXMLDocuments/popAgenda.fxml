@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pnlAgenda" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="637.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cursosystem.FXMLPopAgendaController">
+   <children>
+      <Label layoutX="421.0" layoutY="16.0" text="Agendar Curso" textFill="#e7e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TitledPane fx:id="titagenda" alignment="CENTER" animated="false" collapsible="false" layoutX="66.0" layoutY="69.0" prefHeight="379.0" prefWidth="269.0" style="-fx-background-color: blue;" text="00:00">
+         <content>
+            <TableView fx:id="tablecurso" prefHeight="333.0" prefWidth="273.0" style="-fx-background-color: #05071F;" stylesheets="@../../css/TableStyle.css">
+              <columns>
+                <TableColumn fx:id="nome" prefWidth="135.0" text="Nome" />
+                <TableColumn fx:id="curso" prefWidth="132.0" text="Curso" />
+              </columns>
+            </TableView>
+         </content>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TitledPane>
+      <ComboBox fx:id="cmbhora" layoutX="422.0" layoutY="232.0" prefWidth="150.0" promptText="Horarios" style="-fx-background-color: transparent; -fx-border-radius: 20px; -fx-border-color: #2A73FF; -fx-text-fill: white;" />
+      <TextField fx:id="txtnome" editable="false" layoutX="421.0" layoutY="187.0" promptText="Nome" stylesheets="@../../css/cadastroPop.css" />
+      <Button layoutX="335.0" layoutY="69.0" mnemonicParsing="false" onAction="#nextTime" prefHeight="35.0" prefWidth="34.0" stylesheets="@../../css/style.css" textFill="#00b2ff">
+         <graphic>
+            <ImageView fitHeight="85.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="20.0" layoutY="69.0" mnemonicParsing="false" onAction="#prevTime" prefHeight="35.0" prefWidth="34.0" stylesheets="@../../css/style.css" textFill="#00b2ff">
+         <graphic>
+            <ImageView fitHeight="85.0" fitWidth="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="-122.0" endY="360.0" layoutX="503.0" layoutY="82.0" startX="-122.0" startY="-48.0" stroke="#00baff" />
+      <DatePicker fx:id="dataage" layoutX="425.0" layoutY="68.0" onHidden="#choseDate" prefHeight="27.0" prefWidth="150.0" promptText="Data do Agendamento" style="-fx-background-color: transparent;" stylesheets="@../../css/cadastroPop.css" />
+      <Label layoutX="32.0" layoutY="16.0" text="Cursos no dia:" textFill="#e7e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldata" layoutX="188.0" layoutY="16.0" text="00/00" textFill="#e7e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="434.0" layoutY="364.0" mnemonicParsing="false" onAction="#agendarCurso" prefHeight="48.0" prefWidth="125.0" style="-fx-background-radius: 20px;" stylesheets="@../../css/style.css" text="Concluir" />
+      <ComboBox fx:id="cmbCurso" layoutX="422.0" layoutY="277.0" prefWidth="150.0" promptText="Cursos" style="-fx-background-color: transparent; -fx-border-radius: 20px; -fx-border-color: #2A73FF; -fx-text-fill: white;" />
+      <Label fx:id="lblstatus" layoutX="432.0" layoutY="424.0" prefHeight="17.0" prefWidth="136.0" textFill="#00ff09" />
+      <Label fx:id="lblaviso" layoutX="225.0" prefHeight="17.0" prefWidth="401.0" text="Adicione novos horarios em Configuraçoes&gt;Configuraçoes da Agenda&gt;add" textFill="#ffa600" visible="false" />
+      <Label fx:id="lblnomeaviso" layoutX="407.0" layoutY="164.0" text="*Selecione uma cliente antes de agendar" textFill="RED" visible="false" />
+   </children>
+</Pane>
