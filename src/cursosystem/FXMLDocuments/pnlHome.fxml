@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pnlHomeScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="2.0" layoutY="62.0" prefHeight="512.0" prefWidth="793.0" style="-fx-background-color: transparent;" stylesheets="@../../css/style.css">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="791.0" style="-fx-background-color: #02030A;">
+               <children>
+                  <Pane layoutX="101.0" layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="381.0" style="-fx-background-color: #e0dfdf; -fx-border-color: gray;">
+                     <children>
+                        <Text layoutX="17.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Release - Junho 14, 2019" wrappingWidth="347.13671875">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="17.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" wrappingWidth="354.13671875">
+                           <font>
+                              <Font name="Arial" size="20.0" />
+                           </font>
+                        </Text>
+                        <Line endX="262.0" endY="-0.76171875" layoutX="98.0" layoutY="115.0" startX="-81.0" startY="-0.76171875" />
+                        <VBox layoutX="18.0" layoutY="125.0" prefHeight="122.0" prefWidth="352.0" spacing="10.0">
+                           <children>
+                              <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Seja muito bem vindo ao CursoSystem !">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Esperamos que tenha uma otima experiencia com nosso    programa." wrappingWidth="350.65234375">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Caso encontre algum problema com o software reporte imediatamente ao nosso time, e tentaremos resolver o mais rapido possivel. " wrappingWidth="321.533203125">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="• Aproveite!" wrappingWidth="321.533203125">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <Text layoutX="264.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="versao:">
+                           <font>
+                              <Font name="Consolas" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#727272" layoutX="310.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beta 1.0.0" underline="true">
+                           <font>
+                              <Font name="Consolas" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Label layoutX="14.0" layoutY="14.0" text="Novidades e Atualizaçoes" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <AnchorPane layoutX="2.0" prefHeight="60.0" prefWidth="804.0" style="-fx-background-color: white; -fx-border-color: silver;">
+         <children>
+            <Text layoutX="75.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curso System" wrappingWidth="694.13671875">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+            <MenuButton layoutX="8.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="41.0" style="-fx-background-color: transparent;" stylesheets="@../../css/menuButton.css">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Feedbeck" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/toolbar-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
